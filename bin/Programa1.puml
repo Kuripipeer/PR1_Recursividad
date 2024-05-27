@@ -1,0 +1,18 @@
+@startuml Recursion numeros
+
+class RecursionNumeros{
+    + RecursionNumeros()
+    + sumaRecursiva(int n) : int 
+    + buscarElemento(int[] arreglo, int n, int i) : int
+}
+
+class Pruebas{
+    - teclado : Scanner
+    - recursion : RecursionNumeros
+    + main(String[] args) : void
+    + isInteger(String text) : boolean
+}
+
+RecursionNumeros <|-- Pruebas : < crea
+
+@enduml
