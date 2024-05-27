@@ -1,0 +1,18 @@
+@startuml Manipulación de Cadena de texto
+
+class Cadena{
+    - String texto
+    + Cadena(String texto)
+    + invertir() : String
+    + invertirAux(String texto) : String
+    + contarCaracteres() : int
+    + contarCaracteresAux(String texto) : int
+    + esPalindromo() : boolean
+    + esPalindromoAux(String texto) : boolean
+}
+
+class Prueba{
+    + main(String[] args) : void
+}
+
+@enduml
